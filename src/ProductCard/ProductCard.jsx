@@ -1,11 +1,15 @@
-function ProductCard({ product }) {
-    return (
-      <div style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "16px", margin: "8px" }}>
+function ProductCard({ product, onDelete }) {
+  return (
+    <div className="product-card">
+      <div className="product-image">[ product photo ]</div>
+      <div className="product-info">
         <h3>{product.name}</h3>
-        <p>{product.category}</p>
-        <p><strong>${product.price}</strong></p>
+        <p className="category">{product.category}</p>
+        <p className="price">${product.price}</p>
+        <button className="delete-btn" onClick={() => onDelete(product.id)}>Remove</button>
       </div>
-    );
-  }
-  
-  export default ProductCard;
+    </div>
+  );
+}
+
+export default ProductCard;
