@@ -1,16 +1,17 @@
-# React + Vite
+# Aurum Decor Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack product catalog app — React frontend consuming a custom Node/Express REST API.
 
-Currently, two official plugins are available:
+## Features
+- Category filtering with dynamic state
+- Data fetched live from a custom-built backend API
+- Loading and error states for real-world API handling
+- CRUD-ready backend (GET, POST, DELETE routes)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+Frontend: React, Vite, JavaScript
+Backend: Node.js, Express, CORS
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run locally
+Backend: `cd aurum-decor-api && node server.js`
+Frontend: `cd aurum-decor-app && npm run dev`
